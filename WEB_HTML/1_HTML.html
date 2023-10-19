@@ -4,12 +4,44 @@
     <meta charset="utf-8">
     <title>WEB1 - HTML</title>
 </head>
+<style>
+    /*ul 바로 아래 위치한 li에 대해서만 적용*/
+    /*다만 ul>li>ul>li 순으로 배치된 항목은 단순 ul>li 형식으로 사용하면 두번째 li나 네번째 li나 모두 ul 직계 li이기 때문에 특정할 수 없다*/
+    /*때문에 아래와 같이 id를 특정해주는 것이 좋다*/
+    #lecture>li {
+        border: 1px solid gray;
+    }
+
+    li {
+        color: darkred;
+    }
+
+    /* li 아래 포함된 모든 a에 대해 적용되는 속성 */
+    li a{
+        color: darkred;
+    }
+
+    /*ul과 ol에 똑같이 적용시킬 때*/
+    ul,ol {
+        background-color: lightgrey;
+    }
+
+    #selected {
+        font-size: larger;
+        font-weight: bold;
+    }
+</style>
 
 <body>
 <h1><a href="index.html">About WEB</a></h1>
-<ul>
-    <li><a href="1_HTML.html">HTML</a></li>
-    <li><a href="2_CSS.html">CSS</a></li>
+<ul id="lecture">
+    <li><a href="1_HTML.html" id="selected">HTML</a></li>
+    <li><a href="2_CSS.html">CSS</a>
+        <ul>
+            <li>selector</li>
+            <li>declaration</li>
+        </ul>
+    </li>
     <li><a href="3_JavaScript.html">JavaScript</a></li>
 </ul>
 <h2>HTML 이란?</h2>
@@ -32,5 +64,18 @@
             src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=3870"
     >
 </p>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/652f7ffbf2439e1631e59fc6/1hd0ons8v';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>
