@@ -3,34 +3,34 @@
 <head>
     <meta charset="utf-8">
     <title>WEB1 - HTML</title>
+    <style>
+        /*ul 바로 아래 위치한 li에 대해서만 적용*/
+        /*다만 ul>li>ul>li 순으로 배치된 항목은 단순 ul>li 형식으로 사용하면 두번째 li나 네번째 li나 모두 ul 직계 li이기 때문에 특정할 수 없다*/
+        /*때문에 아래와 같이 id를 특정해주는 것이 좋다*/
+        #lecture>li {
+            border: 1px solid gray;
+        }
+
+        li {
+            color: darkred;
+        }
+
+        /* li 아래 포함된 모든 a에 대해 적용되는 속성 */
+        li a{
+            color: darkred;
+        }
+
+        /*ul과 ol에 똑같이 적용시킬 때*/
+        ul,ol {
+            background-color: lightgrey;
+        }
+
+        #selected {
+            font-size: larger;
+            font-weight: bold;
+        }
+    </style>
 </head>
-<style>
-    /*ul 바로 아래 위치한 li에 대해서만 적용*/
-    /*다만 ul>li>ul>li 순으로 배치된 항목은 단순 ul>li 형식으로 사용하면 두번째 li나 네번째 li나 모두 ul 직계 li이기 때문에 특정할 수 없다*/
-    /*때문에 아래와 같이 id를 특정해주는 것이 좋다*/
-    #lecture>li {
-        border: 1px solid gray;
-    }
-
-    li {
-        color: darkred;
-    }
-
-    /* li 아래 포함된 모든 a에 대해 적용되는 속성 */
-    li a{
-        color: darkred;
-    }
-
-    /*ul과 ol에 똑같이 적용시킬 때*/
-    ul,ol {
-        background-color: lightgrey;
-    }
-
-    #selected {
-        font-size: larger;
-        font-weight: bold;
-    }
-</style>
 
 <body>
 <h1><a href="index.html">About WEB</a></h1>
