@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head >
+    <meta charset="UTF-8" >
+    <title >position-1</title >
+    <style>
+        html{
+            border: 1px solid lightgrey;
+        }
+        div{
+            border: 5px solid lavender;
+            margin: 10px;
+        }
+        #me{
+            position: static;
+            left:100px;
+            top:100px;
+        }
+    </style>
+</head >
+<body >
+    <div id="other" >other</div >
+    <div id="parent" >
+        parent
+        <div id="me" >
+            <p>position : static // 위치를 지정하지 않은 상태. 기본 offSet을 따름</p>
+            <p>position : relative // 부모 element로 부터 상대적인 위치를 찾아 이동함</p>
+        </div >
+    </div >
+</body >
+</html >

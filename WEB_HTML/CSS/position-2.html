@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head >
+    <meta charset="UTF-8" >
+    <title >position-2</title >
+    <style>
+        #parent, #other, #grand{
+            border: 5px solid lavender;
+            
+        }
+        #grand{
+            position: relative;
+        }
+        #me{
+            background-color: indigo;
+            color: white;
+            position:absolute;
+            left: 0px;
+            top:0px;
+        }
+    </style>
+</head >
+<body >
+    <div id="other">other</div>
+    <div id="grand">
+        grand
+        <div id="parent" >
+            parent
+            <div id="me" >me</div >
+        </div >
+    </div>
+    <p>
+        position이 absolute가 되는 순간 직계 부모의 위치를 기준으로 하지 않고<br>
+        position이 relative인 조부모의 위치를 기준으로 움직이게 된다.<br>
+        만약 자신의 위로 relative인 위치를 찾을 수 없다면 최종적으로 있는 html 에 대해서 위치가 잡히게 되는것.<br>
+        이 상태에서도 별도로 지정하지 않은 위치 (left만 지정했다거나 )는 직계 부모를 기준으로 하게된다.
+    </p>
+</body >
+</html >

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head >
+    <meta charset="UTF-8" >
+    <title >cascading</title >
+    <style>
+        li{
+            color: indianred;
+        }
+        #idsel{
+            color: cornflowerblue;
+        }
+        #idsel2{
+            color: darkgreen;
+        }
+        .classsel{
+            color: purple;
+        }
+    </style>
+</head >
+<body >
+    <ul>
+<!--        property는 개별 style > id > class 순으로-->
+<!--        가장 포괄적일수록 우선도가 낮고 가장 특정적일수록 우선도가 높다-->
+        <li>html</li>
+        <li id="idsel" class="classsel" style="color: powderblue">css</li>
+        <li id="idsel2" class="classsel">javascript</li>
+        <li class="classsel">node.js</li>
+    </ul>
+    <p>
+        가장 포괄적인 속성이 가장 낮은 우선도를, 가장 특정적인 속성이 가장 높은 우선도를 가진다.<br>
+        브라우저 입장에서 가장 구체적인 대상을 찾기 때문.<br>
+        예외적으로, 우선순위를 고정하는 방법은 해당 선택자의 원하는 속성에 !important를 후기 해주면 된다.
+    </p>
+</body >
+</html >

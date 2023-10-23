@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head >
+    <meta charset="UTF-8" >
+    <title >margin-collapsing3</title >
+    <style>
+        #empty{
+            margin-top: 50px;
+            margin-bottom: 100px;
+            /*border: 1px solid tomato;*/
+        }
+        #normal{
+            background-color: powderblue;
+        }
+    </style>
+</head >
+<body >
+    <div id="empty"></div>
+    <div id="normal">어떤 element에 시각적 요소가 존재하지 않는 경우<br>
+        이 element의 마진값은 더 큰쪽으로 일괄 적용된다.
+    </div>
+</body >
+</html >

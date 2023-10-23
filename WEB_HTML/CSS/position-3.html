@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head >
+    <meta charset="UTF-8" >
+    <title >position-3</title >
+    <style>
+        body{
+            padding-top: 30px;
+        }
+        #parent, #other{
+            border: 5px solid lavender;
+        }
+        #large{
+            height: 10000px;
+            background-color: powderblue;
+        }
+        #me{
+            background-color: black;
+            color: white;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+        }
+    </style>
+</head >
+<body >
+    <div id="other" >other</div >
+    <div id="parent" >
+        parent
+        <div id="me" >position : fixed // 화면 특정 위치에 스크롤 등과 상관 없이 고정시킨다</div >
+    </div >
+    <div id="large">large</div>
+
+</body >
+</html >
